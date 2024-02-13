@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
@@ -7,6 +7,9 @@ const BASE_URL = "https://akabab.github.io/superhero-api/api";
 const Hero = (props) => {
 
     const [hero, setHero] = useState(null);
+
+    const navigate = useNavigate();
+    console.log(navigate);
 
     // grab the url variable :id
     const { id } = useParams();
@@ -21,6 +24,7 @@ const Hero = (props) => {
             .catch((serverErr) => {
                 console.log("❌❌❌", serverErr);
                 // handle the error!!
+                navigate("/error", { replace: true });
             });
     }, []);
 
