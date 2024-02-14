@@ -7,6 +7,7 @@ var arr2 = [1, 3, 3, 5, 8, 10, 10, 10];
 var arrA = [1, 3, 4, 5];
 var arrB = [1, 3, 3, 5, 8, 10,];
 
+// O(n+m) -> O(2n) -> O(n)
 function mergeDedupe(arr1, arr2) {
 
     const newArr = [];

@@ -21,6 +21,12 @@ function mergeDedupe(arr1, arr2) {
     //2. ....
     //. return the output array
     //! do not use Set()
+    // learning to write good
+    // pseudocode is just as
+    // important as learning to write
+    // actual code, even if it might
+    // feel like an unnecessary step at
+    // times
 }
 
 // try out some other tests
